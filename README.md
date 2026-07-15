@@ -1,4 +1,4 @@
-# @nodewave/table-to-xlsx
+# @faber-eng/xlsx-tools
 
 A lightweight Node.js package to convert HTML tables to Excel files with styling, handles merged cells, and enhanced styling from HTML.
 
@@ -18,14 +18,14 @@ A lightweight Node.js package to convert HTML tables to Excel files with styling
 ## Installation
 
 ```bash
-npm install @nodewave/table-to-xlsx
+npm install @faber-eng/xlsx-tools
 ```
 
 ## Quick Start
 
 ### **Style 1: Default Import (Class-based)**
 ```typescript
-import TableToXlsx from '@nodewave/table-to-xlsx';
+import TableToXlsx from '@faber-eng/xlsx-tools';
 
 const html = `
 <table>
@@ -49,7 +49,7 @@ const buffer = await TableToXlsx.convert(html);
 
 ### **Style 2: Namespace Import**
 ```typescript
-import * as TableToXlsx from '@nodewave/table-to-xlsx';
+import * as TableToXlsx from '@faber-eng/xlsx-tools';
 
 // Same usage as above
 await TableToXlsx.convert(html, 'output.xlsx');
@@ -57,7 +57,7 @@ await TableToXlsx.convert(html, 'output.xlsx');
 
 ### **Style 3: Functional Import**
 ```typescript
-import { convert, convertToFile, convertToBuffer } from '@nodewave/table-to-xlsx';
+import { convert, convertToFile, convertToBuffer } from '@faber-eng/xlsx-tools';
 
 // Direct function calls
 await convert(html, 'output.xlsx');
@@ -162,7 +162,7 @@ You can now apply custom styles directly in your HTML:
 
 ### Basic Table
 ```typescript
-import { convert } from '@nodewave/table-to-xlsx';
+import { convert } from '@faber-eng/xlsx-tools';
 
 const simpleHtml = `
 <table>
@@ -177,7 +177,7 @@ await convert(simpleHtml, 'scores.xlsx');
 
 ### Get as Buffer (for web apps)
 ```typescript
-import { convertToBuffer } from '@nodewave/table-to-xlsx';
+import { convertToBuffer } from '@faber-eng/xlsx-tools';
 
 const buffer = await convertToBuffer(html);
 
@@ -186,7 +186,7 @@ const buffer = await convertToBuffer(html);
 
 ### Enhanced Styling Example
 ```typescript
-import Html2Xlsx from '@nodewave/table-to-xlsx';
+import Html2Xlsx from '@faber-eng/xlsx-tools';
 
 const styledHtml = `
 <table>

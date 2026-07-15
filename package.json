@@ -1,6 +1,6 @@
 {
-    "name": "@nodewave/table-to-xlsx",
-    "version": "0.4.1",
+    "name": "@faber-eng/xlsx-tools",
+    "version": "0.5.0",
     "description": "Convert HTML tables to Excel files with styling and merged cells",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -36,14 +36,17 @@
     ],
     "author": "",
     "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/nodewave-engineering/table-to-xlsx.git"
+        "url": "git+https://github.com/faber-eng/xlsx-tools.git"
     },
     "bugs": {
-        "url": "https://github.com/nodewave-engineering/table-to-xlsx/issues"
+        "url": "https://github.com/faber-eng/xlsx-tools/issues"
     },
-    "homepage": "https://github.com/nodewave-engineering/table-to-xlsx#readme",
+    "homepage": "https://github.com/faber-eng/xlsx-tools#readme",
     "engines": {
         "node": ">=14.0.0"
     }
